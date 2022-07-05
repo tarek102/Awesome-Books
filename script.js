@@ -35,7 +35,7 @@ function displayBooks() {
     bookDiv.appendChild(titleElement);
     bookDiv.appendChild(authorElement);
     bookDiv.appendChild(removeElement);
-    bookDiv.appendChild(horizontalElement)
+    bookDiv.appendChild(horizontalElement);
     booksList.appendChild(bookDiv);
   });
 }
