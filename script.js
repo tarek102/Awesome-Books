@@ -30,9 +30,12 @@ function displayBooks() {
     removeElement.innerText = 'Remove';
     removeElement.setAttribute('data-id', book.index);
 
+    // Create Horizontal element
+    const horizontalElement = document.createElement('hr');
     bookDiv.appendChild(titleElement);
     bookDiv.appendChild(authorElement);
     bookDiv.appendChild(removeElement);
+    bookDiv.appendChild(horizontalElement)
     booksList.appendChild(bookDiv);
   });
 }
