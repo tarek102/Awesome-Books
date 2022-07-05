@@ -45,7 +45,7 @@ function displayBooks() {
 function addBook() {
   // Store book to local storage
   let books;
-
+  if (!titleInput.value || !authorInput.value) return;
   books = JSON.parse(localStorage.getItem("books")) || [];
   
   let book = {};
