@@ -55,7 +55,9 @@ function addBook() {
   books.push(book);
 
   localStorage.setItem("books", JSON.stringify(books));
-
+  titleInput.value = '';
+  authorInput.value = '';
+  
   displayBooks();
 }
 
