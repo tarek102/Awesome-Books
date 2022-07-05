@@ -12,6 +12,22 @@ booksList.addEventListener("click", removeBook);
 // Functions
 
 function addBook() {
+  // Store book to local storage
+  let books;
+  if (localStorage.getItem("books") === null) {
+    books = [];
+  } else {
+    books = JSON.parse(localStorage.getItem("books"));
+  }
+
+  let book = {};
+  book.title = titleInput.value;
+  book.author = authorInput.value;
+  book.index = books.length;
+  books.push(book);
+
+  localStorage.setItem("books", JSON.stringify(books));
+
   // create book Div
   const bookDiv = document.createElement("div");
   bookDiv.classList.add("book");
@@ -28,34 +44,19 @@ function addBook() {
   const removeElement = document.createElement("button");
   removeElement.classList.add("remove-btn");
   removeElement.innerText = "Remove";
+  removeElement.setAttribute("data-id", book.index);
 
   bookDiv.appendChild(titleElement);
   bookDiv.appendChild(authorElement);
   bookDiv.appendChild(removeElement);
   booksList.appendChild(bookDiv);
-
-  let books;
-  if (localStorage.getItem("books") === null) {
-    books = [];
-  } else {
-    books = JSON.parse(localStorage.getItem("books"));
-  }
-
-  let book = {};
-  book.title = titleInput.value;
-  book.author = authorInput.value;
-  book.index = books.length;
-
-  books.push(book);
-
-  localStorage.setItem("books", JSON.stringify(books));
 }
 
 function removeBook(e) {
   const item = e.target;
   if (item.classList[0] === "remove-btn") {
     const books = JSON.parse(localStorage.getItem("books"));
-    const index = item.dataset.id;
+    const index = parseInt(item.dataset.id);
     books.splice(index, 1);
     localStorage.setItem("books", JSON.stringify(books));
   }
