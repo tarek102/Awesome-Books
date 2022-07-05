@@ -7,7 +7,8 @@ const booksList = document.querySelector('.books-list');
 
 // Event Listeners 
 
-addBtn.addEventListener('click', addBook)
+addBtn.addEventListener('click', addBook);
+
 
 // Functions
 
@@ -33,4 +34,21 @@ function addBook() {
   bookDiv.appendChild(authorElement);
   bookDiv.appendChild(removeElement);
   booksList.appendChild(bookDiv);
+
+  let books;
+  if (localStorage.getItem("books") === null) {
+    books = [];
+  } else {
+    books = JSON.parse(localStorage.getItem("books"));
+  }
+
+  let book = {};
+  book.title = titleInput.value;
+  book.author = authorInput.value;
+  book.index = books.length;
+
+  books.push(book);
+
+  localStorage.setItem("books", JSON.stringify(books));
 }
+
