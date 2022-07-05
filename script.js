@@ -8,7 +8,7 @@ const booksList = document.querySelector('.books-list');
 // Event Listeners 
 
 addBtn.addEventListener('click', addBook);
-
+booksList.addEventListener('click', removeBook)
 
 // Functions
 
