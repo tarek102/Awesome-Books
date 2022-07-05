@@ -28,6 +28,7 @@ function addBook() {
 
   // Create Remove Btn
   const removeElement = document.createElement('button');
+  removeElement.classList.add('remove-btn')
   removeElement.innerText = 'Remove';
 
   bookDiv.appendChild(titleElement);
