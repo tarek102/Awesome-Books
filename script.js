@@ -73,11 +73,21 @@ class UI {
     removeElement.innerText = "Remove";
     removeElement.setAttribute("data-id", book.index);
 
-    // Create Horizontal element
-    bookDiv.appendChild(titleElement);
-    bookDiv.appendChild(authorElement);
-    bookDiv.appendChild(removeElement);
+    // Create infoDiv element
+    const infoDiv = document.createElement("div");
+    infoDiv.classList.add("info");
+
+    // create h3
+    const linkElement = document.createElement("h3");
+    linkElement.innerText = 'by';
+
+    infoDiv.appendChild(titleElement)
+    infoDiv.appendChild(linkElement)
+    infoDiv.appendChild(authorElement)
+
+    bookDiv.appendChild(infoDiv);
     booksList.appendChild(bookDiv);
+    booksList.appendChild(removeElement);
   }
 
   static clearFields() {
