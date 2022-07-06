@@ -6,6 +6,7 @@
 
 body {
   background-color: #fff;
+  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
 section {
@@ -54,7 +55,7 @@ hr {
   padding: 5px 0;
 }
 
-.remove-btn {
+.remove-btn, .add-btn button {
   background-color: #fff;
   padding: 6px 12px;
   border-bottom: 4px solid;
@@ -66,3 +67,39 @@ hr {
   font-weight: bold;
 }
 
+.form {
+  text-align: center;
+}
+
+.form h2 {
+  margin-bottom: 18px;
+}
+
+.form form input {
+  padding: 6px;
+  width: 100%;
+  border: 3px solid #000;
+}
+
+.form form input::placeholder {
+  color: #000;
+  font-weight: 600;
+}
+
+.form button {
+  text-align: right !important;
+}
+
+form {
+  width: 50%;
+  margin: 0 auto;
+}
+
+.add-btn {
+  text-align: right;
+  margin-right: 0 !important;
+}
+
+h1 {
+  text-align: center;
+}
