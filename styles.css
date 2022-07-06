@@ -29,6 +29,20 @@ section {
 
 .books-list {
   border: 3px solid;
+  position: relative;
+}
+
+.hr-line {
+  display: flex;
+  justify-content: center;
+  margin-top: 30px;
+}
+
+hr {
+  height: 3px;
+  width: 100px;
+  background-color: black;
+  text-align: center;
 }
 
 .books-list .book:nth-child(odd) {
