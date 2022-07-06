@@ -14,12 +14,30 @@ section {
 
 .book .info {
   display: flex;
+  margin-left: 10px;
+  align-items: center;
+}
+
+.info h3 {
+  margin-right: 5px;
 }
 
 .book {
   display: flex;
   justify-content: space-between;
-  max-width: 90%;
+}
+
+.books-list {
+  border: 3px solid;
+}
+
+.books-list .book:nth-child(odd) {
+  background-color: rgb(6, 247, 247);
+  padding: 5px 0;
+}
+
+.books-list .book:nth-child(even) {
+  padding: 5px 0;
 }
 
 .remove-btn {
@@ -27,4 +45,6 @@ section {
   padding: 6px 12px;
   border-bottom: 4px solid;
   border-right: 4px solid;
+  margin-right: 10px;
+  align-items: center;
 }
