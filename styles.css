@@ -1,7 +1,16 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 body {
   background-color: #fff;
 }
 
+section {
+  padding: 15px;
+}
 
 .book .info {
   display: flex;
@@ -9,4 +18,13 @@ body {
 
 .book {
   display: flex;
+  justify-content: space-between;
+  max-width: 90%;
+}
+
+.remove-btn {
+  background-color: #fff;
+  padding: 6px 12px;
+  border-bottom: 4px solid;
+  border-right: 4px solid;
 }
