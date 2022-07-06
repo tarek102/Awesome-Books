@@ -1,3 +1,8 @@
 body {
   background-color: #fff;
 }
+
+.book .info {
+  display: flex;
+}
+
