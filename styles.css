@@ -59,6 +59,10 @@ hr {
   padding: 6px 12px;
   border-bottom: 4px solid;
   border-right: 4px solid;
+  border-top: 2px solid;
+  border-left: 2px solid;
   margin-right: 10px;
   align-items: center;
+  font-weight: bold;
 }
+
