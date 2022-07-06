@@ -87,7 +87,7 @@ class UI {
 
     bookDiv.appendChild(infoDiv);
     booksList.appendChild(bookDiv);
-    booksList.appendChild(removeElement);
+    bookDiv.appendChild(removeElement);
   }
 
   static clearFields() {
