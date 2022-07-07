@@ -35,6 +35,7 @@ section {
 .books-list {
   border: 3px solid;
   position: relative;
+
   /* display: none; */
 }
 
@@ -75,6 +76,7 @@ hr {
 
 .form {
   text-align: center;
+
   /* display: none; */
 }
 
@@ -107,7 +109,8 @@ form {
   margin-right: 0 !important;
 }
 
-h1 {
+#all-books-section h1,
+#books-section h1 {
   text-align: center;
 }
 
@@ -181,7 +184,6 @@ footer span {
   display: flex;
   flex-direction: column;
   align-items: center;
-  display: none;
 }
 
 #contact-section p {
