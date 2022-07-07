@@ -1,3 +1,5 @@
+/* eslint-disable max-classes-per-file */
+
 // Selectors
 const addBtn = document.querySelector('.add-btn');
 const booksList = document.querySelector('.books-list');
@@ -105,9 +107,7 @@ class UI {
 addBtn.addEventListener('click', () => {
   const titleInput = document.querySelector('#title-input').value;
   const authorInput = document.querySelector('#author-input').value;
-  if (!titleInput || !authorInput) {
-
-  } else {
+  if (titleInput && authorInput) {
     const book = new Book(titleInput, authorInput);
     UI.addBookToList(book);
     Store.addBook(book);
@@ -120,5 +120,7 @@ booksList.addEventListener('click', (e) => {
   console.log(e.target.previousElementSibling.children[2]);
   Store.removeBook(e.target.previousElementSibling.children[2].textContent);
 });
+
+
 // Event listener
 document.addEventListener('DOMContentLoaded', UI.displayBooks);

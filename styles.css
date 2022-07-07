@@ -6,7 +6,7 @@
 
 body {
   background-color: #fff;
-  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
 section {
@@ -55,7 +55,8 @@ hr {
   padding: 5px 0;
 }
 
-.remove-btn, .add-btn button {
+.remove-btn,
+.add-btn button {
   background-color: #fff;
   padding: 6px 12px;
   border-bottom: 4px solid;
