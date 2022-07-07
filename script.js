@@ -121,6 +121,5 @@ booksList.addEventListener('click', (e) => {
   Store.removeBook(e.target.previousElementSibling.children[2].textContent);
 });
 
-
 // Event listener
 document.addEventListener('DOMContentLoaded', UI.displayBooks);
