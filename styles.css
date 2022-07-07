@@ -146,3 +146,19 @@ nav li:last-child {
   font-weight: 600;
   font-size: 14px;
 }
+
+footer {
+  width: 100%;
+  position: absolute;
+  bottom: 10px;
+  left: 0;
+}
+
+footer span {
+  border: 3px solid #000;
+  display: block;
+  width: 96%;
+  margin: 0 auto;
+  padding: 4px;
+}
+
