@@ -194,13 +194,13 @@ footer span {
 }
 
 .show-section{
-  display: block;
+  display: block !important;
 }
 
 .show-flex-section{
-  display: flex;
+  display: flex !important;
 }
 
 .hide-section {
-  display: none;
+  display: none !important;
 }

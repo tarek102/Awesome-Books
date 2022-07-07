@@ -129,12 +129,17 @@ booksList.addEventListener('click', (e) => {
 
 // Event listener
 document.addEventListener('DOMContentLoaded', UI.displayBooks);
-listNavLink.addEventListener('click', function(){
+listNavLink.addEventListener('click', function(e){
+  e.preventDefault()
   alert('list books')
 } );
-addNavLink.addEventListener('click', function(){
-  alert('add section')
+addNavLink.addEventListener('click', function(e){
+  e.preventDefault()
+  addBookSection.classList.add('show-section')
+  contactSection.classList.add('hide-section')
+  allBooksSection.classList.add('hide-section')
 } );
-contactNavLink.addEventListener('click', function(){
-  alert('contact section')
+contactNavLink.addEventListener('click', function(e){
+  e.preventDefault()
+  contactSection.classList.add('show-section')
 } );
