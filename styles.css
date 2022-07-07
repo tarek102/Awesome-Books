@@ -6,7 +6,7 @@
 
 body {
   background-color: #fff;
-  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 section {
@@ -105,7 +105,7 @@ h1 {
   text-align: center;
 }
 
-nav{
+nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -162,3 +162,26 @@ footer span {
   padding: 4px;
 }
 
+#books-section {
+  display: none;
+}
+
+#contact-section h1 {
+  margin-bottom: 40px;
+}
+
+#contact-section {
+  margin: 10px 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#contact-section p {
+  font-weight: 500;
+}
+
+#contact-section p:nth-child(3) {
+  margin-left: 10px;
+  margin-bottom: 20px;
+}
