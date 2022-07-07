@@ -1,3 +1,106 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 body {
   background-color: #fff;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+section {
+  padding: 15px;
+}
+
+.book .info {
+  display: flex;
+  margin-left: 10px;
+  align-items: center;
+}
+
+.info h3 {
+  margin-right: 5px;
+}
+
+.book {
+  display: flex;
+  justify-content: space-between;
+}
+
+.books-list {
+  border: 3px solid;
+  position: relative;
+}
+
+.hr-line {
+  display: flex;
+  justify-content: center;
+  margin-top: 30px;
+}
+
+hr {
+  height: 3px;
+  width: 100px;
+  background-color: black;
+  text-align: center;
+}
+
+.books-list .book:nth-child(odd) {
+  background-color: rgb(6, 247, 247);
+  padding: 5px 0;
+}
+
+.books-list .book:nth-child(even) {
+  padding: 5px 0;
+}
+
+.remove-btn,
+.add-btn button {
+  background-color: #fff;
+  padding: 6px 12px;
+  border-bottom: 4px solid;
+  border-right: 4px solid;
+  border-top: 2px solid;
+  border-left: 2px solid;
+  margin-right: 10px;
+  align-items: center;
+  font-weight: bold;
+}
+
+.form {
+  text-align: center;
+}
+
+.form h2 {
+  margin-bottom: 18px;
+}
+
+.form form input {
+  padding: 6px;
+  width: 100%;
+  border: 3px solid #000;
+}
+
+.form form input::placeholder {
+  color: #000;
+  font-weight: 600;
+}
+
+.form button {
+  text-align: right !important;
+}
+
+form {
+  width: 50%;
+  margin: 0 auto;
+}
+
+.add-btn {
+  text-align: right;
+  margin-right: 0 !important;
+}
+
+h1 {
+  text-align: center;
 }
