@@ -119,7 +119,6 @@ class UI {
 
 // Adding Book
 addBtn.addEventListener('click', () => {
-  UI.displayBooks();
   const titleInput = document.querySelector('#title-input').value;
   const authorInput = document.querySelector('#author-input').value;
   if (titleInput && authorInput) {
