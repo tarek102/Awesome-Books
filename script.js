@@ -3,6 +3,12 @@
 // Selectors
 const addBtn = document.querySelector('.add-btn');
 const booksList = document.querySelector('.books-list');
+const allBooksSection = document.querySelector('#all-books-section');
+const addBookSection = document.querySelector('#books-section');
+const contactSection = document.querySelector('#contact-section');
+const listNavLink = document.querySelector('.list-nav-link');
+const addNavLink = document.querySelector('.add-nav-link');
+const contactNavLink = document.querySelector('.contact-nav-link');
 
 class Book {
   constructor(title, author) {
@@ -123,3 +129,12 @@ booksList.addEventListener('click', (e) => {
 
 // Event listener
 document.addEventListener('DOMContentLoaded', UI.displayBooks);
+listNavLink.addEventListener('click', function(){
+  alert('list books')
+} );
+addNavLink.addEventListener('click', function(){
+  alert('add section')
+} );
+contactNavLink.addEventListener('click', function(){
+  alert('contact section')
+} );
