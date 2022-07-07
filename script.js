@@ -132,18 +132,21 @@ document.addEventListener("DOMContentLoaded", UI.displayBooks);
 listNavLink.addEventListener("click", function (e) {
   e.preventDefault();
   allBooksSection.classList.add("show-section");
+  allBooksSection.classList.remove("hide-section");
   addBookSection.classList.add("hide-section");
   contactSection.classList.add("hide-section");
 });
 addNavLink.addEventListener("click", function (e) {
   e.preventDefault();
   addBookSection.classList.add("show-section");
+  addBookSection.classList.remove("hide-section");
   contactSection.classList.add("hide-section");
   allBooksSection.classList.add("hide-section");
 });
 contactNavLink.addEventListener("click", function (e) {
   e.preventDefault();
   contactSection.classList.add("show-flex-section");
+  contactSection.classList.remove("hide-section");
   addBookSection.classList.add("hide-section");
   allBooksSection.classList.add("hide-section");
 });
