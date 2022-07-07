@@ -114,6 +114,10 @@ nav{
   margin: 3px 15px;
 }
 
+nav .logo {
+  cursor: pointer;
+}
+
 nav .nav-links ul {
   display: flex;
   list-style: none;
@@ -132,4 +136,13 @@ nav li:nth-child(-n+2) {
 
 nav li:last-child {
   padding: 3px 5px;
+}
+
+.date {
+  display: flex;
+  justify-content: flex-end;
+  margin-right: 15px;
+  margin-top: 10px;
+  font-weight: 600;
+  font-size: 14px;
 }
