@@ -192,3 +192,15 @@ footer span {
 #all-books-section {
   /* display: none; */
 }
+
+.show-section{
+  display: block;
+}
+
+.show-flex-section{
+  display: flex;
+}
+
+.hide-section {
+  display: none;
+}
