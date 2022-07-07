@@ -141,5 +141,7 @@ addNavLink.addEventListener('click', function(e){
 } );
 contactNavLink.addEventListener('click', function(e){
   e.preventDefault()
-  contactSection.classList.add('show-section')
+  contactSection.classList.add('show-flex-section')
+  addBookSection.classList.add('hide-section')
+  allBooksSection.classList.add('hide-section')
 } );
