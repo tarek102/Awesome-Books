@@ -59,6 +59,14 @@ class UI {
     books.forEach((book) => {
       UI.addBookToList(book);
     });
+
+    allBooksSection.classList.add("show-section");
+    allBooksSection.classList.remove("hide-section");
+    addBookSection.classList.add("hide-section");
+    contactSection.classList.add("hide-section");
+    listNavLink.children[0].classList.add('active');
+    contactNavLink.children[0].classList.remove('active');
+    addNavLink.children[0].classList.remove('active');
   }
 
   static addBookToList(book) {
@@ -111,6 +119,7 @@ class UI {
 
 // Adding Book
 addBtn.addEventListener("click", () => {
+  UI.displayBooks();
   const titleInput = document.querySelector("#title-input").value;
   const authorInput = document.querySelector("#author-input").value;
   if (titleInput && authorInput) {
@@ -135,6 +144,10 @@ listNavLink.addEventListener("click", function (e) {
   allBooksSection.classList.remove("hide-section");
   addBookSection.classList.add("hide-section");
   contactSection.classList.add("hide-section");
+  listNavLink.children[0].classList.add('active');
+  contactNavLink.children[0].classList.remove('active');
+  addNavLink.children[0].classList.remove('active');
+
 });
 addNavLink.addEventListener("click", function (e) {
   e.preventDefault();
@@ -142,6 +155,9 @@ addNavLink.addEventListener("click", function (e) {
   addBookSection.classList.remove("hide-section");
   contactSection.classList.add("hide-section");
   allBooksSection.classList.add("hide-section");
+  addNavLink.children[0].classList.add('active');
+  listNavLink.children[0].classList.remove('active');
+  contactNavLink.children[0].classList.remove('active');
 });
 contactNavLink.addEventListener("click", function (e) {
   e.preventDefault();
@@ -149,4 +165,8 @@ contactNavLink.addEventListener("click", function (e) {
   contactSection.classList.remove("hide-section");
   addBookSection.classList.add("hide-section");
   allBooksSection.classList.add("hide-section");
+  contactNavLink.children[0].classList.add('active');
+  listNavLink.children[0].classList.remove('active');
+  addNavLink.children[0].classList.remove('active');
+
 });

@@ -208,3 +208,7 @@ footer span {
 .hide-section {
   display: none !important;
 }
+
+.active {
+  color: rgb(48, 48, 230) !important;
+}
