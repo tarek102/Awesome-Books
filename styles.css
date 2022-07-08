@@ -6,11 +6,15 @@
 
 body {
   background-color: #fff;
-  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 
 section {
   padding: 15px;
+}
+
+#all-books-section h1 {
+  margin-bottom: 15px;
 }
 
 .book .info {
@@ -31,6 +35,8 @@ section {
 .books-list {
   border: 3px solid;
   position: relative;
+
+  /* display: none; */
 }
 
 .hr-line {
@@ -70,6 +76,8 @@ hr {
 
 .form {
   text-align: center;
+
+  /* display: none; */
 }
 
 .form h2 {
@@ -101,6 +109,108 @@ form {
   margin-right: 0 !important;
 }
 
-h1 {
+#all-books-section h1,
+#books-section h1 {
   text-align: center;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px;
+  border: 3px solid #000;
+  margin: 3px 15px;
+}
+
+nav .logo {
+  cursor: pointer;
+}
+
+nav .nav-links ul {
+  display: flex;
+  list-style: none;
+}
+
+nav a {
+  text-decoration: none;
+  color: black;
+  margin: 0 7px;
+}
+
+nav li:nth-child(-n + 2) {
+  border-right: 3px solid #000;
+  padding: 3px 5px;
+}
+
+nav li:last-child {
+  padding: 3px 5px;
+}
+
+.date {
+  display: flex;
+  justify-content: flex-end;
+  margin-right: 15px;
+  margin-top: 10px;
+  font-weight: 600;
+  font-size: 14px;
+}
+
+footer {
+  width: 100%;
+  position: absolute;
+  bottom: 10px;
+  left: 0;
+}
+
+footer span {
+  border: 3px solid #000;
+  display: block;
+  width: 96%;
+  margin: 0 auto;
+  padding: 4px;
+}
+
+#books-section {
+  display: none;
+}
+
+#contact-section h1 {
+  margin-bottom: 40px;
+}
+
+#contact-section {
+  margin: 10px 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#contact-section p {
+  font-weight: 500;
+}
+
+#contact-section p:nth-child(3) {
+  margin-left: 10px;
+  margin-bottom: 20px;
+}
+
+#all-books-section {
+  /* display: none; */
+}
+
+.show-section {
+  display: block !important;
+}
+
+.show-flex-section {
+  display: flex !important;
+}
+
+.hide-section {
+  display: none !important;
+}
+
+.active {
+  color: rgb(48, 48, 230) !important;
 }
