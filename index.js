@@ -3,7 +3,7 @@
 import Book from './modules/book.js';
 import UI from './modules/UI.js';
 import Store from './modules/localStorage.js';
-import { DateTime } from "./modules/luxon.js";
+import { DateTime } from './modules/luxon.js';
 
 // Selectors
 const addBtn = document.querySelector('.add-btn');
@@ -18,9 +18,9 @@ const contactNavLink = document.querySelector('.contact-nav-link');
 
 // dynamically create date
 
-let dt = DateTime.now();
+const dt = DateTime.now();
 const newDate = document.createElement('span');
-newDate.innerHTML = `${dt.toLocaleString(DateTime.DATETIME_MED)}`
+newDate.innerHTML = `${dt.toLocaleString(DateTime.DATETIME_MED)}`;
 date.appendChild(newDate);
 console.log(dt);
 
