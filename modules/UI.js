@@ -1,3 +1,5 @@
+/* eslint-disable import/extensions */
+
 import Store from './localStorage.js';
 
 const booksList = document.querySelector('.books-list');

@@ -1,5 +1,5 @@
 /* eslint-disable max-classes-per-file */
-
+/* eslint-disable import/extensions */
 import Book from './modules/book.js';
 import UI from './modules/UI.js';
 import Store from './modules/localStorage.js';
