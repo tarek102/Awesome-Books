@@ -3,6 +3,7 @@
 import Book from './modules/book.js';
 import UI from './modules/UI.js';
 import Store from './modules/localStorage.js';
+import { DateTime } from "./modules/luxon.js";
 
 // Selectors
 const addBtn = document.querySelector('.add-btn');
@@ -12,7 +13,16 @@ const addBookSection = document.querySelector('#books-section');
 const contactSection = document.querySelector('#contact-section');
 const listNavLink = document.querySelector('.list-nav-link');
 const addNavLink = document.querySelector('.add-nav-link');
+const date = document.querySelector('.date');
 const contactNavLink = document.querySelector('.contact-nav-link');
+
+// dynamically create date
+
+let dt = DateTime.now();
+const newDate = document.createElement('span');
+newDate.innerHTML = `${dt.toLocaleString(DateTime.DATETIME_MED)}`
+date.appendChild(newDate);
+console.log(dt);
 
 // Adding Book
 addBtn.addEventListener('click', () => {
