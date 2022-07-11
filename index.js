@@ -1,5 +1,7 @@
 /* eslint-disable max-classes-per-file */
 
+import Book from './modules/book.js';
+
 // Selectors
 const addBtn = document.querySelector('.add-btn');
 const booksList = document.querySelector('.books-list');
@@ -10,12 +12,6 @@ const listNavLink = document.querySelector('.list-nav-link');
 const addNavLink = document.querySelector('.add-nav-link');
 const contactNavLink = document.querySelector('.contact-nav-link');
 
-class Book {
-  constructor(title, author) {
-    this.title = title;
-    this.author = author;
-  }
-}
 
 // LocalStorage Class
 
