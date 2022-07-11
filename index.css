@@ -195,10 +195,6 @@ footer span {
   margin-bottom: 20px;
 }
 
-#all-books-section {
-  /* display: none; */
-}
-
 .show-section {
   display: block !important;
 }
