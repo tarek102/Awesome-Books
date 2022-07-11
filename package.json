@@ -27,5 +27,6 @@
   "bugs": {
     "url": "https://github.com/tarek102/Awesome-Books/issues"
   },
-  "homepage": "https://github.com/tarek102/Awesome-Books#readme"
+  "homepage": "https://github.com/tarek102/Awesome-Books#readme",
+  "type": "module"
 }
