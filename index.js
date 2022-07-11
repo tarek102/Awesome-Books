@@ -22,7 +22,6 @@ const dt = DateTime.now();
 const newDate = document.createElement('span');
 newDate.innerHTML = `${dt.toLocaleString(DateTime.DATETIME_MED)}`;
 date.appendChild(newDate);
-console.log(dt);
 
 // Adding Book
 addBtn.addEventListener('click', () => {
