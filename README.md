@@ -14,6 +14,9 @@ To get a local copy up and running follow these simple example steps.
 - Click on code and copy the link
 - Go to command line and type git clone https://github.com/tarek102/Awesome-books.git
 
+## Live Demo
+[Live Demo](https://tarek102.github.io/Awesome-Books/)
+
 ## Authors
 
 👤 **Tarek**
